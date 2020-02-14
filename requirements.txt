@@ -1,0 +1,29 @@
+Template
+I have implemented the requirements in the following way (how and where).
+Non-Functional Requirements
+NF_Req #1 -	validation screenshots in validation.docx
+NF_Req #2 -	navbar for all pages implemented in all but login page
+NF_Req #3 -	used images for gifts and ads
+NF_Req #4 -	used simple color palette with blue accents
+NF_Req #5 -	bootstrap implemented in all pages
+			additional css in ryug.css
+NF_Req #6 -	all javascript is embedded or in site.js
+Functional Requirements
+F_Req #1 - 	used combination of bootstrap and media queries in ryug.css in all pages
+F_Req #2 - 	login.html, home.html, history.html, store.html, discount.html (5)
+F_Req #3 - 	Bear Shirt, "Hockey" Shoes, Old Radio, Leopard High-Heels, Holiday Sweater, Plaid Ushanka on store.html (used images obtained online)
+F_Req #4 - 	used validate() to process form on login.html
+F_Req #5 -	video on home.html (source: https://www.youtube.com/watch?v=px-pMbiG7tI)
+F_Req #6 -	tables used on login form, sign up form, and game
+			search on top of store.html
+			additional buttons in items on store.html
+F_Req #7 -	logo animation on home.html
+F_Req #8 -	fake ad images from online used on all pages except login.html
+			implemented animated ad for me, the designer, on login.html
+F_Req #9 -	used overflow-y:scroll attribute on div in history.html
+			historySetup(), toggleScroll(), and textScroll() do this in site.js
+			inspiration from: https://stackoverflow.com/questions/8107251/automatically-scroll-page-from-top-to-bottom-then-back-up-and-repeat
+		note: doesn't work in latest version of Edge, but does work in Chrome
+F_Req #10 -	function countThemWords() from site.js implemented on every page
+F_Req #11 -	game is on discount.html using turnOverTile() and ryug.css classes
+			no outside help was used

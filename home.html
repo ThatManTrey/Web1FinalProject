@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>RYUG Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<!--Custom Stylesheet-->
+	<link rel="stylesheet" href="css/ryug.css">
+	<!--javascript-->
+	<script type="text/javascript" src="js/site.js"></script>
+</head>
+<body>
+
+<header class="container mb-4">
+	<div class="navbar navbar-expand-md navbar-light bg-light">
+		<div class="navbar-brand">
+			RYUG
+		</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<nav class="navbar-collapse collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li>
+					<a class="nav-link active" href="home.html">Home</a>
+				</li>
+				<li>
+					<a class="nav-link" href="login.html">Login</a>
+				</li>
+				<li>
+					<a class="nav-link" href="history.html">History</a>
+				</li>
+				<li>
+					<a class="nav-link" href="store.html">Store</a>
+				</li>
+				<li>
+					<a class="nav-link" href="discount.html">Discount</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class="container main">
+	<div class="text-center">
+		<h1>Welcome to <span style="visibility:hidden;">Ryug</span><span><span id="logo">RYUG</span></span></h1>
+		<h2><em>Recycle-Your-Ugly-Gifts</em></h2>
+	</div>
+	<br>
+	<div class="row">
+		<a class="col-3" href="#">
+			<img class="img-thumbnail img-responsive ad" src="images/ads/2012race.jpg" alt="ad">
+		</a>
+		<div class="col-6 text-center">
+			<h4>Our Devs Hard At Work!</h4>
+			<video class="" id="video" controls width="100%" height="auto">
+				<source src="vid/how_to_print_hello_world_in_java_no_commentary.mp4"
+					type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				not supported
+			</video>
+			<h3>Sign Up Here!</h3>
+			<form name="signUp">
+				<table id="credentials" class="mx-auto">
+					<tr>
+						<th>Username: </th>
+						<td>
+							<input type="text" name="user">
+						</td>
+					</tr>
+					<tr>
+						<th>Email: </th>
+						<td>
+							<input type="text" name="email">
+						</td>
+					</tr>
+					<tr>
+						<th>Password: </th>
+						<td>
+							<input type="password" name="pass1">
+						</td>
+					</tr>
+					<tr>
+						<th>Password (again): </th>
+						<td>
+							<input type="password" name="pass2">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<button type="button" onclick="checkPw(this.form)">Sign Up</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div class="col-3">
+			<script>
+				document.write("Total words: "+countThemWords());
+			</script>
+			<a href="#">
+				<img class="img-thumbnail img-responsive ad" src="images/ads/kaftan.jpg" alt="ad">
+			</a>
+		</div>
+	</div>
+	<div class="text-center">
+		<p id="credentialFail">Unmatched passwords!</p>
+	</div>
+</div>
+
+<footer class="container footer mt-5">
+	<div class="text-center">
+		&copy;2019
+	</div>
+</footer>
+</body>
+</html>

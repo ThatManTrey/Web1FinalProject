@@ -1,0 +1,134 @@
+@media only screen and (max-width: 50em) {
+	td, th {
+		margin-left: -15px;
+		display: block;
+	}
+	.store-head form {
+		display: block;
+		margin: 0 auto;
+	}
+	.store-head h2 {
+		margin-left: auto;
+	}
+	.game-table td {
+		margin-left: 0px;
+		display: table-cell;
+	}
+}
+
+body {
+	color: white;
+	margin: 0;
+	padding: 1em;
+	background-color: #333;
+}
+
+.main {
+	background-color: #9e9e9e;
+	width: 90%;
+	padding: 1em 0;
+}
+
+.footer {
+	color: black;
+	background-color: #9e9e9e;
+	width: 90%;
+}
+
+#credentials tr {
+	width: 100%;
+	height: 60px;
+}
+
+#credentials th {
+	padding: 10px;
+}
+
+#credentialFail {
+	color:red;
+	visibility:hidden;
+}
+
+.promo {
+	color: black;
+}
+
+.ad {
+	object-fit: cover;
+	width: 100%;
+}
+
+#logo {
+	position: absolute;
+	margin-left: -90px;;
+	animation: logoAnime 4s linear infinite;
+}
+
+@keyframes logoAnime {
+  25% {
+    color: red;
+    transform: rotate(15deg);
+  }
+  50% {
+    color: yellow;
+    transform: rotate(0deg);
+  } 
+  75% {
+    color: blue;
+	transform: rotate(-15deg);
+  }
+  100% {
+    color: green;
+    transform: rotate(0deg);
+  } 
+}
+
+#history {
+	font-size: 1.25em;
+	width: 100%;
+	height: 250px;
+	overflow-y: scroll;
+}
+
+.img-thumbnail {
+	color: black;
+}
+
+.item-container {
+	width: 130px;
+	height: 130px;
+}
+
+.item {
+	max-width:100%;
+	height:auto;
+}
+
+.price {
+	color:red;
+}
+
+.game {
+	max-width:100%;
+	height:auto;
+}
+
+.game-table {
+	width: 250px;
+	height: 300px;
+}
+
+.game-panel {
+	border:solid white 1px;
+	border-collapse:collapse;
+	color:white;
+	text-align:center;
+	width:33%;
+	height:33%;
+	background-color:#333;
+}
+
+#result {
+	color:rgba(0,0,0,0);
+	height:60px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>RYUG Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<!--animate.css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<!--Custom Stylesheet-->
+	<link rel="stylesheet" href="css/ryug.css">
+	<!--javascript-->
+	<script type="text/javascript" src="js/site.js"></script>
+</head>
+<body class="login-body">
+
+<div class="container text-center my-5 mx-auto main">
+	<div class="col-8 mx-auto">
+		<h2>Login for RYUG</h2>
+		<p><em>Dev hint: use "admin" for the
+			username and "DaP455werd" for the password.</em></p>
+	</div>
+	<form name="loginForm">
+		<table id="credentials" class="mx-auto">
+			<tr>
+				<th>Username:</th>
+				<td>
+					<input type="text" name="user">
+				</td>
+			</tr>
+			<tr>
+				<th>Password:</th>
+				<td>
+					<input type="password" name="pass">
+				</td>
+			</tr>
+			<tr>
+				  <td></td>
+				<td>
+					<button type="button" onclick="validate(this.form)">Login</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<p id="credentialFail">Incorrect username and/or password!</p>
+	<script>
+		document.write("Total words: "+countThemWords());
+	</script>
+	<a class="col-12" href="#">
+		<div class="img-thumbnail ad promo">
+			<h4>Website created by:</h4>
+			<h2 class="animated infinite flash delay-1s">Trey Phillips</h2>
+		</div>
+	</a>
+</div>
+
+<footer class="container footer mt-5">
+	<div class="text-center">
+		&copy;2019
+	</div>
+</footer>
+</body>
+</html>

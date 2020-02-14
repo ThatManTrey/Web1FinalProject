@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>RYUG Store</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<!--Custom Stylesheet-->
+	<link rel="stylesheet" href="css/ryug.css">
+	<!--Custom Javascript-->
+	<script type="text/javascript" src="js/site.js"></script>
+</head>
+<body>
+<header class="container mb-4">
+	<div class="navbar navbar-expand-md navbar-light bg-light">
+		<div class="navbar-brand">
+			RYUG
+		</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<nav class="navbar-collapse collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li>
+					<a class="nav-link" href="home.html">Home</a>
+				</li>
+				<li>
+					<a class="nav-link" href="login.html">Login</a>
+				</li>
+				<li>
+					<a class="nav-link" href="history.html">History</a>
+				</li>
+				<li>
+					<a class="nav-link active" href="store.html">Store</a>
+				</li>
+				<li>
+					<a class="nav-link" href="discount.html">Discount</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class="container main">
+	<div class="store-head row col-12 mx-auto">
+		<h2 class="mr-auto">The RYUG Store</h2>
+		<form method="get" action="http://www.randyconnolly.com/tests/process.php">
+			<div class="input-group">
+				<input type="text" class="form-control"
+					placeholder="search item here..." name="search">
+				<div class="input-group-append">
+					<button class="btn btn-primary" type="submit">
+						Search
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="mx-auto my-4 row col-12 text-center d-inline-flex justify-content-between">
+		<div class="img-thumbnail mb-4 px-0 pb-4">
+			<div class="item-container">
+				<img class="img-responsive item" src="images/items/christmas_sweater.jpg" alt="item">
+			</div>
+			<div>
+				<div>Bear Shirt</div>
+				<div class="price">$20</div>
+				<div>LG</div>
+			</div>
+			<button class="btn btn-sm btn-primary">
+				Buy!
+			</button>
+		</div>
+		<div class="img-thumbnail mb-4 px-0 pb-4">
+			<div class="item-container">
+				<img class="img-responsive item" src="images/items/christmas-shoes.jpg" alt="item">
+			</div>
+			<div>
+				<div>"Hockey" Shoes</div>
+				<div class="price">$40</div>
+				<div>M 10</div>
+			</div>
+			<button class="btn btn-sm btn-primary">
+				Buy!
+			</button>
+		</div>
+		<div class="img-thumbnail mb-4 px-0 pb-4">
+			<div class="item-container">
+				<img class="img-responsive item" src="images/items/compact.jpg" alt="item">
+			</div>
+			<div>
+				<div>Old Radio</div>
+				<div class="price">$10</div>
+				<div>FM/AM</div>
+			</div>
+			<button class="btn btn-sm btn-primary">
+				Buy!
+			</button>
+		</div>
+		<div class="img-thumbnail mb-4 px-0 pb-4">
+			<div class="item-container">
+				<img class="img-responsive item" src="images/items/ugly-shoe.jpg" alt="item">
+			</div>
+			<div>
+				<div>Leopard High-Heels</div>
+				<div class="price">$30</div>
+				<div>W 7</div>
+			</div>
+			<button class="btn btn-sm btn-primary">
+				Buy!
+			</button>
+		</div>
+		<div class="img-thumbnail mb-4 px-0 pb-4">
+			<div class="item-container">
+				<img class="img-responsive item" src="images/items/uglysweater.jpg" alt="item">
+			</div>
+			<div>
+				<div>Holiday Sweater</div>
+				<div class="price">$20</div>
+				<div>M</div>
+			</div>
+			<button class="btn btn-sm btn-primary">
+				Buy!
+			</button>
+		</div>
+		<div class="img-thumbnail mb-4 px-0 pb-4">
+			<div class="item-container">
+				<img class="img-responsive item" src="images/items/ushanka.jpg" alt="item">
+			</div>
+			<div>
+				<div>Plaid Ushanka</div>
+				<div class="price">$10</div>
+				<div>M</div>
+			</div>
+			<button class="btn btn-sm btn-primary">
+				Buy!
+			</button>
+		</div>
+	</div>
+	<div class="col-12">
+		<script>
+			document.write("Total words: "+countThemWords());
+		</script>
+		<a href="#">
+			<img class="img-thumbnail img-responsive ad" src="images/ads/android.jpg" alt="ad">
+		</a>
+	</div>
+</div>
+
+<footer class="container footer mt-5">
+	<div class="text-center">
+		&copy;2019
+	</div>
+</footer>
+</body>
+</html>

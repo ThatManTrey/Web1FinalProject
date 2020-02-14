@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Discount Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<!--Custom Stylesheet-->
+	<link rel="stylesheet" href="css/ryug.css">
+	<!--Custom Javascript-->
+	<script type="text/javascript" src="js/site.js"></script>
+	<script type="text/javascript">
+		var cnt25 = 0;
+		var cnt5 = 0;
+		var clckCnt = 0;
+	</script>
+</head>
+<body>
+<header class="container mb-4">
+	<div class="navbar navbar-expand-md navbar-light bg-light">
+		<div class="navbar-brand">
+			RYUG
+		</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<nav class="navbar-collapse collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li>
+					<a class="nav-link" href="home.html">Home</a>
+				</li>
+				<li>
+					<a class="nav-link" href="login.html">Login</a>
+				</li>
+				<li>
+					<a class="nav-link" href="history.html">History</a>
+				</li>
+				<li>
+					<a class="nav-link" href="store.html">Store</a>
+				</li>
+				<li>
+					<a class="nav-link active" href="discount.html">Discount</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class="container main">
+	<div class="col-9 mx-auto text-center">
+		<h2>Discount Game</h2>
+		<p>Click on blocks to reveal a discount.
+			Reveal 3 matching blocks in a row to win.
+			If you succeed, a discount code is revealed.</p>
+		<div class="col-12 my-4">
+			<table class="game-table mx-auto">
+				<tbody class="game">
+					<tr>
+						<td id="1" class="game-panel" onclick="turnOverTile('25%', 1);"></td>
+						<td id="2" class="game-panel" onclick="turnOverTile('5%', 2);"></td>
+						<td id="3" class="game-panel" onclick="turnOverTile('5%', 3);"></td>
+					</tr>
+					<tr>
+						<td id="4" class="game-panel" onclick="turnOverTile('Sorry!', 4);"></td>
+						<td id="5" class="game-panel" onclick="turnOverTile('25%', 5);"></td>
+						<td id="6" class="game-panel" onclick="turnOverTile('Sorry!', 6);"></td>
+					</tr>
+					<tr>
+						<td id="7" class="game-panel" onclick="turnOverTile('5%', 7);"></td>
+						<td id="8" class="game-panel" onclick="turnOverTile('25%', 8);"></td>
+						<td id="9" class="game-panel" onclick="turnOverTile('Sorry!', 9);"></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr id="result">
+						<td colspan="2">
+							<span id="message"></span>
+						</td>
+						<td id="code"></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+	<div class="col-12 mx-auto">
+		<script>
+			document.write("Total words: "+countThemWords());
+		</script>
+		<a href="#">
+			<img class="img-thumbnail img-responsive ad" src="images/ads/love.jpg" alt="ad">
+		</a>
+	</div>
+</div>
+	
+<footer class="container footer mt-5">
+	<div class="text-center">
+		&copy;2019
+	</div>
+</footer>
+</body>
+</html>
